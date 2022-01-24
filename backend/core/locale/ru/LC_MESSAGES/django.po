@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 02:20+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\foodgram\settings.py:130
+msgid "English"
+msgstr "Английский"
+
+#: .\foodgram\settings.py:131
+msgid "Russian"
+msgstr "Русский"
+
+#: .\recipes\admin.py:48 .\recipes\admin.py:62 .\recipes\admin.py:80
+#: .\users\admin.py:34 .\users\admin.py:63
+msgid "-empty-"
+msgstr "-пусто-"
+
+#: .\recipes\admin.py:89 .\recipes\models.py:20
+msgid "Color"
+msgstr "Цвет"
+
+#: .\recipes\apps.py:12 .\recipes\models.py:115
+msgid "Recipes"
+msgstr "Рецепты"
+
+#: .\recipes\models.py:14 .\recipes\models.py:43 .\recipes\models.py:75
+msgid "Name"
+msgstr "Название"
+
+#: .\recipes\models.py:17
+msgid "The tag's name"
+msgstr "Введите название"
+
+#: .\recipes\models.py:23
+msgid "The tag's color"
+msgstr "Введите цвет"
+
+#: .\recipes\models.py:26
+msgid "Slug"
+msgstr "Слаг"
+
+#: .\recipes\models.py:28
+msgid "The tag's slug"
+msgstr "Введите слаг"
+
+#: .\recipes\models.py:32 .\recipes\models.py:137 .\recipes\models.py:147
+msgid "Tag"
+msgstr "Ярлык"
+
+#: .\recipes\models.py:33 .\recipes\models.py:148
+msgid "Tags"
+msgstr "Ярлыки"
+
+#: .\recipes\models.py:46
+msgid "The ingredient's name"
+msgstr "Введите название"
+
+#: .\recipes\models.py:49
+msgid "Measurement unit"
+msgstr "Единицы измерения"
+
+#: .\recipes\models.py:51
+msgid "The ingredient's measurement unit"
+msgstr "Введите единицы измерения"
+
+#: .\recipes\models.py:55 .\recipes\models.py:166 .\recipes\models.py:182
+msgid "Ingredient"
+msgstr "Ингредиент"
+
+#: .\recipes\models.py:56 .\recipes\models.py:183
+msgid "Ingredients"
+msgstr "Ингредиенты"
+
+#: .\recipes\models.py:71
+msgid "Author"
+msgstr "Автор"
+
+#: .\recipes\models.py:72
+msgid "The recipe's author"
+msgstr "Выберите автора"
+
+#: .\recipes\models.py:77
+msgid "The recipe's name"
+msgstr "Введите название"
+
+#: .\recipes\models.py:80
+msgid "Description"
+msgstr "Описание"
+
+#: .\recipes\models.py:81
+msgid "The recipe's description"
+msgstr "Введите описание"
+
+#: .\recipes\models.py:84
+msgid "Cooking time"
+msgstr "Время приготовления"
+
+#: .\recipes\models.py:85
+msgid "The recipe's cooking time"
+msgstr "Введите время приготовления"
+
+#: .\recipes\models.py:93
+msgid "Image"
+msgstr "Картинка"
+
+#: .\recipes\models.py:94
+msgid "The recipe's image"
+msgstr "Выберите картинку"
+
+#: .\recipes\models.py:107
+msgid "Publication date"
+msgstr "Дата публикации"
+
+#: .\recipes\models.py:108
+msgid "The recipe's publication date"
+msgstr "Введите дату публикации"
+
+#: .\recipes\models.py:114 .\recipes\models.py:131 .\recipes\models.py:160
+#: .\recipes\models.py:195 .\recipes\models.py:224
+msgid "Recipe"
+msgstr "Рецепт"
+
+#: .\recipes\models.py:169
+msgid "Amount"
+msgstr "Количество"
+
+#: .\recipes\models.py:170
+msgid "The ingredient amount"
+msgstr "Введите количество"
+
+#: .\recipes\models.py:201 .\recipes\models.py:230 .\users\admin.py:73
+msgid "User"
+msgstr "Пользователь"
+
+#: .\recipes\models.py:211
+msgid "Favorite recipe"
+msgstr "Избранный рецепт"
+
+#: .\recipes\models.py:212
+msgid "Favorite recipes"
+msgstr "Избранный рецепты"
+
+#: .\recipes\models.py:240
+msgid "Shopping cart"
+msgstr "Список покупок"
+
+#: .\users\admin.py:79 .\users\models.py:61
+msgid "Subscriptions"
+msgstr "Подписки"
+
+#: .\users\apps.py:12
+msgid "Users"
+msgstr "Пользователи"
+
+#: .\users\models.py:23
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: .\users\models.py:28
+msgid "A user with that username already exists."
+msgstr "Пользователь с таким именем уже существует."
+
+#: .\users\models.py:30
+msgid "Enter the username."
+msgstr "Введите имя пользователя"
+
+#: .\users\models.py:33
+msgid "Email address"
+msgstr "Адрес электронной почты"
+
+#: .\users\models.py:37
+msgid "A user with that email already exists."
+msgstr "Пользователь с таким адресом электронной почты уже существует."
+
+#: .\users\models.py:39
+msgid "Enter the email."
+msgstr "Введите адрес электронной почты"
+
+#: .\users\models.py:42
+msgid "First name"
+msgstr "Имя"
+
+#: .\users\models.py:44
+msgid "Enter the first name."
+msgstr "Введите имя"
+
+#: .\users\models.py:47
+msgid "Last name"
+msgstr "Фамилия"
+
+#: .\users\models.py:49
+msgid "Enter the last name."
+msgstr "Введите фамилию"
+
+#: .\users\models.py:52
+msgid "Password"
+msgstr "Пароль"
+
+#: .\users\models.py:54
+msgid "Enter the password."
+msgstr "Введите пароль"
+
+#: .\users\models.py:82 .\users\models.py:118
+msgid "Subscription"
+msgstr "Подписка"
+
+#: .\users\models.py:95 .\users\models.py:96
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: .\users\models.py:103 .\users\models.py:104
+msgid "Subscribed"
+msgstr "Подписан"
+
+#: .\users\validators.py:13
+msgid "Enter a valid username. The value 'me' is forbidden as username."
+msgstr "Введите другое имя пользователя. Имя пользователя 'me' запрещено."
+
+#: .\core\admin.py:10
+msgid "Foodgram site admin panel"
+msgstr "Продуктовый помощник - управление сайтом"
+
+#: .\core\admin.py:11
+msgid "Foodgram administration"
+msgstr "Продуктовый помощник - администрирование"
