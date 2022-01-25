@@ -9,7 +9,6 @@ from rest_framework.response import Response
 from api.permissions import AuthorOrAdminOrReadOnly
 from api.utils import get_shopping_cart_file
 from recipes.models import Ingredient, Recipe, Tag
-
 from .filters import IngredientFilter, RecipeFilter
 from .serializers import (IngredientSerializer, RecipeSerializer,
                           RecipeShortSerializer, TagSerializer)

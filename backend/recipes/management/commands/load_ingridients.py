@@ -17,9 +17,4 @@ class Command(BaseCommand):
         for row in reader:
             name, unit = row
             Ingredient.objects.get_or_create(name=name, unit=unit)
-        # Ingridient.objects.bulk_create(
-        #     [Ingridient(
-        #         **{k.lower(): v for k, v in data.items()}
-        #     ) for data in reader])
-
         self.stdout.write(self.style.SUCCESS('Successfully loaded'))
