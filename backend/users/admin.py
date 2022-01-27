@@ -58,7 +58,7 @@ class UserSubscriptionAdmin(admin.ModelAdmin):
         'list_display_subscriptions',
     )
     inlines = (
-         UserSubscriptionInline,
+        UserSubscriptionInline,
     )
     empty_value_display = _('-empty-')
     form = UserSubscriptionAdminForm
