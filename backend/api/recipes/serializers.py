@@ -33,9 +33,9 @@ class RecipeTagSerializer(serializers.ModelSerializer):
         data = super().to_internal_value({'id': data})
         try:
             tag = Tag.objects.get(id=data['tag']['id'])
+            return tag
         except Tag.DoesNotExist:
             raise ValidationError(_('Invalid data. No such tag.'))
-        return tag
 
 
 class IngredientSerializer(serializers.ModelSerializer):
