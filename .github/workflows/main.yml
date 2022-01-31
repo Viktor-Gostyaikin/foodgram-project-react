@@ -39,7 +39,7 @@ jobs:
           with:
             file: ./backend/Dockerfile
             push: true
-            tags: gostyaikin/foodgram:latest
+            tags: gostyaikin/foodgram:v1.0
 
   deploy:
     runs-on: ubuntu-latest
