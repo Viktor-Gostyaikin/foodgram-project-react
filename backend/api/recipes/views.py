@@ -1,17 +1,19 @@
 ''' Views for 'recipes' API application. '''
 
+from api.permissions import AuthorOrAdminOrReadOnly
+from api.utils import get_shopping_cart_file
 from django.utils.translation import gettext_lazy as _
 from django_filters.rest_framework import DjangoFilterBackend
+from recipes.models import Ingredient, Recipe, Tag
 from rest_framework import mixins, permissions, status, validators, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
-from api.permissions import AuthorOrAdminOrReadOnly
-from api.utils import get_shopping_cart_file
-from recipes.models import Ingredient, Recipe, Tag
 from .filters import IngredientFilter, RecipeFilter
-from .serializers import (IngredientSerializer, RecipeSerializer,
-                          RecipeShortSerializer, TagSerializer)
+from .serializers import (
+    IngredientSerializer, RecipeSerializer, RecipeShortSerializer,
+    TagSerializer,
+)
 
 
 class TagViewSet(mixins.RetrieveModelMixin,

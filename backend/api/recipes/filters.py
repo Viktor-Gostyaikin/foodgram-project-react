@@ -1,9 +1,8 @@
 ''' Filter classes for 'recipes' API application. '''
 
 from django_filters.rest_framework import FilterSet, filters
-from rest_framework.filters import SearchFilter
-
 from recipes.models import Recipe, User
+from rest_framework.filters import SearchFilter
 
 
 class RecipeFilter(FilterSet):
