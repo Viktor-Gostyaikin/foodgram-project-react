@@ -11,8 +11,8 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - static_value:/app/static/
-      - media_value:/app/media/
+      - static_value:/backend/static/
+      - media_value:/backend/media/
     depends_on:
       - db
     env_file:
@@ -22,7 +22,7 @@ services:
       context: ../frontend
       dockerfile: Dockerfile
     volumes:
-      - ../frontend/:/app/result_build/
+      - ../frontend/:/backend/result_build/
   nginx:
     image: nginx:1.19.3
     ports:
