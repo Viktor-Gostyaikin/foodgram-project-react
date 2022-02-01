@@ -5,11 +5,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - ../backend/.env
+      - ../.env
   backend:
-    build:
-      context: ../backend
-      dockerfile: Dockerfile
+    image
     ports:
       - 8000:8000
     volumes:
@@ -18,7 +16,7 @@ services:
     depends_on:
       - db
     env_file:
-      - ../backend/.env
+      - ../.env
   frontend:
     build:
       context: ../frontend
