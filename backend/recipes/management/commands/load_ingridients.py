@@ -1,4 +1,5 @@
-import csv
+import json
+import requests
 
 from django.core.management.base import BaseCommand
 from recipes.models import Ingredient
@@ -10,10 +11,9 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('link', type=str)
 
-    def handle(self, link: str, *args, **options):
-        with open(link, mode='r', encoding='utf-8') as csv_file:
-            reader = csv.reader(csv_file)
-            for row in reader:
-                name, unit = row
-                Ingredient.objects.get_or_create(name=name, unit=unit)
+    def handle(self, link: str):
+        response = requests.get(link).text
+        reader = json.loads(response)
+        for row in reader:
+            Ingredient.objects.get_or_create(name=row.get('name'), unit=row.get('measurement_unit'))
         self.stdout.write(self.style.SUCCESS('Successfully loaded'))
