@@ -11,7 +11,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('link', type=str)
 
-    def handle(self, link: str):
+    def handle(self, link: str, *args, **options):
         response = requests.get(link).text
         reader = json.loads(response)
         for row in reader:
