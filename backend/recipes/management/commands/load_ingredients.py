@@ -16,5 +16,5 @@ class Command(BaseCommand):
         reader = json.loads(response)
         for row in reader:
             Ingredient.objects.get_or_create(name=row.get(
-                'name'), unit=row.get('measurement_unit'))
+                'name'), measurement_unit=row.get('measurement_unit'))
         self.stdout.write(self.style.SUCCESS('Successfully loaded'))
