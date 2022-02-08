@@ -10,7 +10,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('link', type=str)
 
-    def handle(self, link: str):
+    def handle(self, link: str, *args, **options):
         with open(link, mode='r', encoding='utf-8') as csv_file:
             reader = csv.reader(csv_file)
             for row in reader:
