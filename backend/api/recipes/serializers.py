@@ -72,7 +72,7 @@ class RecipeSerializer(
     ''' Serializer class for :model:'recipes.Recipe'. '''
     author = UserSerializer(read_only=True)
     ingredients = RecipeIngredientSerializer(many=True)
-    image = fields.Base64ImageFieldRelativePath(required=True)
+    image = fields.Base64ImageField(required=True)
     tags = RecipeTagSerializer(many=True)
     is_favorited = serializers.SerializerMethodField()
     is_in_shopping_cart = serializers.SerializerMethodField()
