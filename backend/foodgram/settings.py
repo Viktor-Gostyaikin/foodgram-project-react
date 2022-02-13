@@ -45,7 +45,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'foodgram.urls'
 
-DOCS_DIR = os.path.join(BASE_DIR, "docs")
+DOCS_DIR = os.path.join(BASE_DIR, 'api/docs/')
 
 TEMPLATES = [
     {
