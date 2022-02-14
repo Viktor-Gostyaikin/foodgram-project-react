@@ -62,7 +62,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
         serializer = RecipeShortSerializer(instance=recipe)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-    @action(detail=True, methods=['get', 'delete'],
+    @action(detail=True, methods=['post', 'delete'],
             permission_classes=(permissions.IsAuthenticated,),
             name='favorite')
     def favorite(self, request, pk=None):
@@ -71,7 +71,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
             request.user.favorite_recipes
         )
 
-    @action(detail=True, methods=['get', 'delete'],
+    @action(detail=True, methods=['post', 'delete'],
             permission_classes=(permissions.IsAuthenticated,),
             name='shopping_cart')
     def shopping_cart(self, request, pk=None):
