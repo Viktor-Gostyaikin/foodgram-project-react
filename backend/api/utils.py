@@ -1,5 +1,4 @@
 ''' Utils for API. '''
-import pdfkit
 
 from django.db.models import Sum
 from django.http import HttpResponse
@@ -16,10 +15,9 @@ def get_shopping_cart_file(user):
     items = (
         ['{} {}{}'.format(item[0], item[2], item[1]) for item in data]
     )
-    pdf = pdfkit.from_string('\n'.join(items), 'shopping_cart.pdf')
     response = HttpResponse(
-        pdf, content_type='application/pdf'
+        '\n'.join(items), content_type='text/plain; charset=utf-8'
     )
     response['Content-Disposition'] = ('attachment;'
-                                       ' filename="shopping_cart.pdf"')
+                                       ' filename="shopping_cart.txt"')
     return response
