@@ -1,4 +1,4 @@
-FROM surnet/alpine-python-wkhtmltopdf:3.9.9-0.12.6-small
+FROM surnet/alpine-python-wkhtmltopdf:3.9.9-0.12.6-full
 WORKDIR /backend
 COPY backend .
 RUN pip3 install -r requirements.txt --no-cache-dir
