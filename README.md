@@ -93,13 +93,16 @@ sudo docker-compose up -d --build
     sudo docker-compose exec backend python manage.py collectstatic --noinput
     ```
     - Примените миграции:
+    - 
+    ```
+    sudo docker-compose exec backend python manage.py makemigrations
+    ```
     ```
     sudo docker-compose exec backend python manage.py migrate --noinput
     ```
-    - Загрузите ингридиенты  в базу данных (необязательно):  
-    *Если файл не указывать, по умолчанию выберется ingredients.json*
+    - Загрузите ингридиенты  в базу данных (необязательно):
     ```
-    sudo docker-compose exec backend python manage.py load_ingredients <Название файла из директории data>
+    sudo docker-compose exec backend python manage.py load_ingredients <url json>
     ```
     - Создать суперпользователя Django:
     ```
@@ -108,8 +111,15 @@ sudo docker-compose up -d --build
     - Проект будет доступен по вашему IP
 
 ## Проект в интернете
-Проект запущен и доступен по [адресу](http://www.gostyaikin.ga/recipes)
-
+Проект запущен и доступен по [gostyaikin.ga](http://www.gostyaikin.ga/recipes) или [51.250.16.175](http://51.250.16.175/recipes)
+### Доступ к админке: 
+```
+gostyaikin@yandex.ru
+```
+### Пароль:
+```
+Gost4018
+```
 ### Технологии
 
 В проекте применяется 
