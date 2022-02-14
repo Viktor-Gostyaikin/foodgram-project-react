@@ -112,8 +112,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'api/docs/'),
 )
 
-MEDIA_URL = 'mediafiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles/')
+MEDIA_URL = '/mediafiles/'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
