@@ -8,11 +8,10 @@ services:
       - ../.env
   backend:
     image: gostyaikin/foodgram:v1.0
-    ports:
-      - 8000:8000
     volumes:
       - static_value:/backend/static/
       - media_value:/backend/media/
+      - docs:/backend/api/docs/
     depends_on:
       - db
     env_file:

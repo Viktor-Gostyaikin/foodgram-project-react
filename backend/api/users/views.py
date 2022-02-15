@@ -26,7 +26,7 @@ class SubscriptionsViewSet(viewsets.GenericViewSet):
         serializer = self.get_serializer(self.get_queryset(), many=True)
         return Response(serializer.data)
 
-    @action(detail=True, methods=['get', 'delete'], name='subscribe')
+    @action(detail=True, methods=['post', 'delete'], name='subscribe')
     def subscribe(self, request, pk=None):
         ''' Process user subscription actions.. '''
         subscribed = get_object_or_404(get_user_model(), id=pk)
