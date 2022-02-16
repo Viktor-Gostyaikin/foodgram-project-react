@@ -263,9 +263,6 @@ function App() {
               onSignUp={registration}
             />
           </Route>
-          <Route path='/'>
-            {loggedIn ? <Redirect to='/recipes' /> : <Redirect to='/signin'/>}
-          </Route>
         </Switch>
         <Footer />
       </div>
