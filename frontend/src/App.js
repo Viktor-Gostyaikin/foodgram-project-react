@@ -263,6 +263,9 @@ function App() {
               onSignUp={registration}
             />
           </Route>
+          <Route path='/'>
+            <Redirect to='/recipes'/>
+          </Route>
         </Switch>
         <Footer />
       </div>
