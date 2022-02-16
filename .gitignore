@@ -132,5 +132,5 @@ dmypy.json
 .idea
 
 # staticfiles and mediafiles
-/backend/staticfiles/
+backend/staticfiles/
 media/
